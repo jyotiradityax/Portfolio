@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html>
+<head>
+<title>
+Portfolio-Jyotiraditya
+</title>
+<style type="text/css">
+
+
+a:link { 
+      color:white;
+	  text-decoration:none;
+}
+a:visited { 
+      color:white;
+}
+a:active { 
+      color:white;
+}
+<!--iframe{
+    margin-left:8%;
+	margin-top:10%;
+}-->
+
+#left {
+    color:white;
+	position:absolute;
+	background-color:#8d583a;
+	top:0px;
+	left:0px;
+	width:25%;
+	padding:0;
+    margin:0;
+	border-radius: 8px;
+}
+#left:hover{
+    color:#8d583a;
+    background-color:white;
+}
+
+#nextleft {
+    color:white;
+	position:absolute;
+	background-color:#8d583a;
+	top:0px;
+	left:25%;
+	width:25%;
+	padding:0;
+    margin:0;
+	border-radius: 8px;
+}
+#nextleft:hover{
+    color:#8d583a;
+    background-color:white;
+}
+#nextright {    
+    color:white;
+	position:absolute;
+	background-color:#8d583a;
+	top:0px;
+	right:25%;
+	width:25%;
+	padding:0;
+    margin:0;
+	border-radius: 8px;
+}
+#nextright:hover{
+    color:#8d583a;
+    background-color:white;
+}
+#right {
+    color:#8d583a;
+	position:absolute;
+	background-color:#d3d3d3;
+	width:25%;
+	top:0px;
+	right:0px;	
+	padding:0;
+    margin:0;
+	border-radius: 8px;
+}
+#right:hover{
+    color:#8d583a;
+    background-color:white;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+<!------------------------------------------------->
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container2 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+<!----------------------------------------------------->
+
+</style>
+</head>
+<body>
+
+    <a href="index.html"> <div id="left"> <center> <h2>  Home  </h2> </center></div></a>
+	 
+	 <a href="FinalAboutMe.html"><div id="nextleft"> 
+	 <center> <h2> About Me</h2> </center> 
+	 </div></a>
+	 
+	  <a href="FinalHobbies.html"><div id="nextright"> 
+	 <center> <h2>Hobbies</h2> </center> 
+	 </div></a>
+	 
+	 <a href="#.html"><div id="right"> <center> <h2> Contact</h2> </center></div></a>
+<br />
+<br />
+<h1><center>Contact Me</center></h1>
+<div class="card">
+  <img src="me.jpg" alt="Jyotiraditya" style="width:100%">
+  <div class="container">
+    <h1>Jyotiraditya</h1>
+    <p class="title">Electrical Engineering</p>
+    <p>IIT Kharagpur</p>
+    
+   <p><button>Contact</button>
+   <center>
+<a href="http://facebook.com/JyotiradityaFC" ><img src="facebook.png" alt="Facebook" style="width:40px;height:40px;"></a>
+<a href="https://twitter.com/JyotiradityaFC" ><img src="twitter.png" alt="Twitter" style="width:40px;height:40px;"></a>
+<a href="https://www.linkedin.com/in/jyotiraditya-440a1a125/" ><img src="linkedin.png" alt="LinkedIn" style="width:40px;height:40px;"></a>
+<a href="https://www.instagram.com/jyotiradityafc/" ><img src="instagram.png" alt="Instagram" style="width:40px;height:40px;"></a>
+<a href="https://plus.google.com/112454147583563478070" ><img src="googleplus.png" alt="GooglePlus" style="width:40px;height:40px;"></a>
+</center>
+</p>
+  </div>
+</div>
+<br />
+
+
+
+<br />
+
+
+<h3>Contact Form</h3>
+
+<div class="container2">
+  <form action="action_page.php" method="post">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+
+
+
+</html>
